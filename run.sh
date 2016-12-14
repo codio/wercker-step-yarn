@@ -4,7 +4,7 @@ YARN=yarn
 
 if ! hash yarn 2>/dev/null; then
   echo "Installing yarn..."
-  npm install -g --loglevel warn yarn
+  curl -o- -L https://yarnpkg.com/install.sh | bash
 fi
 
 YARN="HOME=$WERCKER_CACHE_DIR $YARN"
