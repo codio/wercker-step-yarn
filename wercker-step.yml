@@ -1,0 +1,7 @@
+name: yarn
+version: 0.0.1
+description: yarn install
+properties:
+  options:
+    type: string
+    required: false
